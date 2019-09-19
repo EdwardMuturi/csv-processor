@@ -1,0 +1,4 @@
+#Thu Sep 19 18:58:10 EAT 2019
+base.0=/Users/edward/AndroidStudioProjects/CSVProcessor/app/build/intermediates/dex/debug/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
