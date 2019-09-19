@@ -9,6 +9,8 @@ import android.os.Bundle;
 import com.edward.csvprocessor.R;
 import com.edward.csvprocessor.viewmodel.ParserViewModel;
 
+import butterknife.OnClick;
+
 public class ParserActivity extends AppCompatActivity {
     private ParserViewModel parserViewModel;
 
@@ -20,4 +22,6 @@ public class ParserActivity extends AppCompatActivity {
 
 
     }
+
+
 }
