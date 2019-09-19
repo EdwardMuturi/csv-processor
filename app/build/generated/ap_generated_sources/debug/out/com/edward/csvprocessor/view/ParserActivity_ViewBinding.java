@@ -14,7 +14,7 @@ import java.lang.Override;
 public class ParserActivity_ViewBinding implements Unbinder {
   private ParserActivity target;
 
-  private View view7f080048;
+  private View view7f08004c;
 
   @UiThread
   public ParserActivity_ViewBinding(ParserActivity target) {
@@ -27,7 +27,7 @@ public class ParserActivity_ViewBinding implements Unbinder {
 
     View view;
     view = Utils.findRequiredView(source, R.id.btnOpenFile, "method 'openFile'");
-    view7f080048 = view;
+    view7f08004c = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -43,7 +43,7 @@ public class ParserActivity_ViewBinding implements Unbinder {
     target = null;
 
 
-    view7f080048.setOnClickListener(null);
-    view7f080048 = null;
+    view7f08004c.setOnClickListener(null);
+    view7f08004c = null;
   }
 }

@@ -27,6 +27,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.obsez.android.lib.filechooser.permissions.PermissionActivity"
+            android:label=""
+            android:theme="@style/Theme.Transparent" />
 
         <provider
             android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"

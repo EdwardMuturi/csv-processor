@@ -9,15 +9,14 @@
 
     <TextView
         android:layout_width="@dimen/dimen_0dp"
-        android:layout_height="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/dimen_15dp"
         android:layout_marginEnd="@dimen/dimen_15dp"
         android:text="Hello World!"
         android:id="@+id/tvDisplayData"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/btnOpenFile"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
         android:layout_width="match_parent"
