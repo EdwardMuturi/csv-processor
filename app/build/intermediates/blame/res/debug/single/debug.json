@@ -12,6 +12,10 @@
         "source": "/Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
+        "merged": "/Users/edward/AndroidStudioProjects/CSVProcessor/app/build/intermediates/res/merged/debug/layout_activity_parser.xml.flat",
+        "source": "/Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/res/layout/activity_parser.xml"
+    },
+    {
         "merged": "/Users/edward/AndroidStudioProjects/CSVProcessor/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_launcher_background.png.flat",
         "source": "/Users/edward/AndroidStudioProjects/CSVProcessor/app/build/generated/res/pngs/debug/drawable-mdpi/ic_launcher_background.png"
     },
@@ -70,10 +74,6 @@
     {
         "merged": "/Users/edward/AndroidStudioProjects/CSVProcessor/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "/Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
-    },
-    {
-        "merged": "/Users/edward/AndroidStudioProjects/CSVProcessor/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
-        "source": "/Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/res/layout/activity_main.xml"
     },
     {
         "merged": "/Users/edward/AndroidStudioProjects/CSVProcessor/app/build/intermediates/res/merged/debug/drawable-v24_ic_launcher_foreground.xml.flat",

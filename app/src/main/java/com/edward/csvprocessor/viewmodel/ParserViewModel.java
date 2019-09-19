@@ -11,7 +11,7 @@ import com.edward.csvprocessor.util.Util;
  */
 public class ParserViewModel extends ViewModel {
 
-    private Intent openFile(){
+    public Intent openFile(){
         return Util.openFile();
     }
 }

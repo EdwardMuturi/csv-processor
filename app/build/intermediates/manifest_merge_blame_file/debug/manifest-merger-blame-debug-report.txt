@@ -10,38 +10,53 @@
 9        android:targetSdkVersion="29" />
 9-->/Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml
 10
-11    <application
-11-->/Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:5:5-19:19
-12        android:allowBackup="true"
-12-->/Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:6:9-35
-13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.1.0] /Users/edward/.gradle/caches/transforms-2/files-2.1/817f5f994f467f8f015ac529db244e2e/core-1.1.0/AndroidManifest.xml:24:18-86
-14        android:debuggable="true"
-15        android:icon="@mipmap/ic_launcher"
-15-->/Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:7:9-43
-16        android:label="@string/app_name"
-16-->/Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:8:9-41
-17        android:roundIcon="@mipmap/ic_launcher_round"
-17-->/Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:9:9-54
-18        android:supportsRtl="true"
-18-->/Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:10:9-35
-19        android:testOnly="true"
-20        android:theme="@style/AppTheme" >
-20-->/Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:11:9-40
-21        <activity android:name="com.edward.csvprocessor.MainActivity" >
-21-->/Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:12:9-18:20
-21-->/Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:12:19-47
-22            <intent-filter>
-22-->/Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:13:13-17:29
-23                <action android:name="android.intent.action.MAIN" />
-23-->/Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:14:17-69
-23-->/Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:14:25-66
-24
-25                <category android:name="android.intent.category.LAUNCHER" />
-25-->/Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:16:17-77
-25-->/Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:16:27-74
-26            </intent-filter>
-27        </activity>
-28    </application>
-29
-30</manifest>
+11    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+11-->/Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:5:5-79
+11-->/Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:5:22-77
+12
+13    <application
+13-->/Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:7:5-21:19
+14        android:allowBackup="true"
+14-->/Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:8:9-35
+15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+15-->[androidx.core:core:1.1.0] /Users/edward/.gradle/caches/transforms-2/files-2.1/817f5f994f467f8f015ac529db244e2e/core-1.1.0/AndroidManifest.xml:24:18-86
+16        android:debuggable="true"
+17        android:icon="@mipmap/ic_launcher"
+17-->/Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:9:9-43
+18        android:label="@string/app_name"
+18-->/Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:10:9-41
+19        android:roundIcon="@mipmap/ic_launcher_round"
+19-->/Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:11:9-54
+20        android:supportsRtl="true"
+20-->/Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:12:9-35
+21        android:testOnly="true"
+22        android:theme="@style/AppTheme" >
+22-->/Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:13:9-40
+23        <activity android:name="com.edward.csvprocessor.view.ParserActivity" >
+23-->/Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:14:9-20:20
+23-->/Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:14:19-54
+24            <intent-filter>
+24-->/Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:15:13-19:29
+25                <action android:name="android.intent.action.MAIN" />
+25-->/Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:16:17-69
+25-->/Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:16:25-66
+26
+27                <category android:name="android.intent.category.LAUNCHER" />
+27-->/Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:18:17-77
+27-->/Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:18:27-74
+28            </intent-filter>
+29        </activity>
+30
+31        <provider
+31-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/edward/.gradle/caches/transforms-2/files-2.1/24fd77da075855e4f433a9910a085b7e/lifecycle-process-2.1.0/AndroidManifest.xml:23:9-27:43
+32            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+32-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/edward/.gradle/caches/transforms-2/files-2.1/24fd77da075855e4f433a9910a085b7e/lifecycle-process-2.1.0/AndroidManifest.xml:24:13-79
+33            android:authorities="com.edward.csvprocessor.lifecycle-process"
+33-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/edward/.gradle/caches/transforms-2/files-2.1/24fd77da075855e4f433a9910a085b7e/lifecycle-process-2.1.0/AndroidManifest.xml:25:13-69
+34            android:exported="false"
+34-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/edward/.gradle/caches/transforms-2/files-2.1/24fd77da075855e4f433a9910a085b7e/lifecycle-process-2.1.0/AndroidManifest.xml:26:13-37
+35            android:multiprocess="true" />
+35-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/edward/.gradle/caches/transforms-2/files-2.1/24fd77da075855e4f433a9910a085b7e/lifecycle-process-2.1.0/AndroidManifest.xml:27:13-40
+36    </application>
+37
+38</manifest>
