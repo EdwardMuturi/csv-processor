@@ -65,7 +65,7 @@ public class ParserActivity extends AppCompatActivity {
                 //get file path
                 Uri uri = data.getData();
                 String filePath = Util.getPathFromURI(context, uri);
-                cities = Util.readCSVFile(filePath);
+                cities = Util.readCSVFile(filePath, ",");
 
                 csvParserAdapter.submitList(cities);
 

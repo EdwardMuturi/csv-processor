@@ -45,7 +45,7 @@ public class Util {
      * @param path
      * @return String
      */
-    public static List<Cities> readCSVFile(String path) {
+    public static List<Cities> readCSVFile(String path, String splitter) {
         StringBuilder stringBuilder = new StringBuilder();
         String line = null;
         List<Cities> citiesList = new ArrayList<>();
@@ -56,7 +56,7 @@ public class Util {
             BufferedReader bufferedReader = new BufferedReader(fileReader);
 
             //get titles in first line
-            String [] titles = bufferedReader.readLine().split(",");
+            String [] titles = bufferedReader.readLine().split(splitter);
 
 
             while ((line = bufferedReader.readLine()) != null) {
