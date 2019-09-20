@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,7 +14,6 @@ import com.edward.csvprocessor.R;
 import com.edward.csvprocessor.util.Util;
 import com.edward.csvprocessor.viewmodel.ParserViewModel;
 
-import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -25,8 +23,7 @@ public class ParserActivity extends AppCompatActivity {
     private static final int OPEN_FILE_REQUEST_CODE = 100;
     private Context context;
 
-    @BindView(R.id.tvDisplayData)
-    TextView tvFileContents;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,7 +52,6 @@ public class ParserActivity extends AppCompatActivity {
                 Uri uri = data.getData();
                 String filePath = Util.getPathFromURI(context, uri);
 
-                tvFileContents.setText(  Util.readCSVFile(filePath));
 
 
             } catch (NullPointerException e) {
