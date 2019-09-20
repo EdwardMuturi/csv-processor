@@ -6,20 +6,11 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.os.Environment;
 import android.provider.MediaStore;
-import android.util.Log;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import com.obsez.android.lib.filechooser.ChooserDialog;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.util.Objects;
 
 public class Util {
     private static final String STORAGE_PATH = Environment.getExternalStorageDirectory().getAbsolutePath();
@@ -64,6 +55,10 @@ public class Util {
             BufferedReader bufferedReader = new BufferedReader(fileReader);
 
             while ((line = bufferedReader.readLine()) != null) {
+                //split data by comma ,
+                String [] values= line.split(",");
+
+                //read data
                 stringBuilder.append(line);
                 System.out.println(line);
             }
