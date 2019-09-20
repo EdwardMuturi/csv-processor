@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:2:1-23:12
+ADDED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:2:1-24:12
 MERGED from [com.google.android.material:material:1.1.0-alpha10] /Users/edward/.gradle/caches/transforms-2/files-2.1/5f29903a31a6c7d5b74c1d7506863662/material-1.1.0-alpha10/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/edward/.gradle/caches/transforms-2/files-2.1/cb892f1215385eb8252179ca2be487fc/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/edward/.gradle/caches/transforms-2/files-2.1/81b4befd56738460558097115169f353/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
@@ -38,20 +38,20 @@ MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/edward/.gradle/caches/
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/edward/.gradle/caches/transforms-2/files-2.1/2699634602e48cd91f38f2dbfa0b329d/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/edward/.gradle/caches/transforms-2/files-2.1/ef586528a8bcd6118bb20b1db116f80b/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/edward/.gradle/caches/transforms-2/files-2.1/de4d07cf665401b16452d69c69243bd7/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:2:1-24:12
 	package
 		ADDED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:3:5-38
 		INJECTED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml
-		ADDED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:2:1-23:12
+		ADDED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:2:1-24:12
 		INJECTED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml
-		ADDED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:2:1-23:12
+		ADDED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:2:1-24:12
 		INJECTED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:2:11-69
@@ -59,8 +59,12 @@ uses-permission#android.permission.READ_EXTERNAL_STORAGE
 ADDED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:5:5-79
 	android:name
 		ADDED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:5:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:6:5-80
+	android:name
+		ADDED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:6:22-78
 application
-ADDED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:7:5-21:19
+ADDED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:8:5-22:19
 MERGED from [com.google.android.material:material:1.1.0-alpha10] /Users/edward/.gradle/caches/transforms-2/files-2.1/5f29903a31a6c7d5b74c1d7506863662/material-1.1.0-alpha10/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.1.0-alpha10] /Users/edward/.gradle/caches/transforms-2/files-2.1/5f29903a31a6c7d5b74c1d7506863662/material-1.1.0-alpha10/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/edward/.gradle/caches/transforms-2/files-2.1/81b4befd56738460558097115169f353/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
@@ -76,31 +80,31 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/edwa
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] /Users/edward/.gradle/caches/transforms-2/files-2.1/e79878761ceda7cd7fa53c34804b0578/core-1.1.0/AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:12:9-35
+		ADDED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:13:9-35
 	android:label
-		ADDED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:10:9-41
+		ADDED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:11:9-41
 	android:roundIcon
-		ADDED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:11:9-54
+		ADDED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:12:9-54
 	android:icon
-		ADDED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:9:9-43
+		ADDED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:10:9-43
 	android:allowBackup
-		ADDED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:8:9-35
+		ADDED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:13:9-40
+		ADDED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:14:9-40
 activity#com.edward.csvprocessor.view.ParserActivity
-ADDED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:14:9-20:20
+ADDED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:15:9-21:20
 	android:name
-		ADDED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:14:19-54
+		ADDED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:15:19-54
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:15:13-19:29
+ADDED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:16:13-20:29
 action#android.intent.action.MAIN
-ADDED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:16:17-69
+ADDED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:17:17-69
 	android:name
-		ADDED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:16:25-66
+		ADDED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:17:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:18:17-77
+ADDED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:19:17-77
 	android:name
-		ADDED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:18:27-74
+		ADDED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml:19:27-74
 uses-sdk
 INJECTED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/edward/AndroidStudioProjects/CSVProcessor/app/src/main/AndroidManifest.xml
