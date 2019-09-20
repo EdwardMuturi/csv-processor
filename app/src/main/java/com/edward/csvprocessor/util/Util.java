@@ -7,6 +7,8 @@ import android.net.Uri;
 import android.os.Environment;
 import android.provider.MediaStore;
 
+import com.edward.csvprocessor.model.Cities;
+
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -54,13 +56,18 @@ public class Util {
             //wrap file reader in BufferedReader
             BufferedReader bufferedReader = new BufferedReader(fileReader);
 
+            bufferedReader.readLine();
+
             while ((line = bufferedReader.readLine()) != null) {
                 //split data by comma ,
                 String [] values= line.split(",");
+                Cities cities= new Cities(String.valueOf(values[0]), values[1], values[2], values[3], values[4], values[5], values[6], values[7], values[8], values[9]);
+
 
                 //read data
+
                 stringBuilder.append(line);
-                System.out.println(line);
+                System.out.println(cities);
             }
 
             bufferedReader.close(); //close file
