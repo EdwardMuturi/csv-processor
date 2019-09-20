@@ -54,16 +54,79 @@ public class Util {
             FileReader fileReader = new FileReader(path);
             //wrap file reader in BufferedReader
             BufferedReader bufferedReader = new BufferedReader(fileReader);
+            Cities cities;
 
             //get titles in first line
-            String [] titles = bufferedReader.readLine().split(splitter);
+            String[] titles = bufferedReader.readLine().split(splitter);
 
 
             while ((line = bufferedReader.readLine()) != null) {
                 //split data by comma ,
                 String[] values = line.split(",");
+                String value1; String value2 ;String value3; String value4; String value5; String value6; String value7; String value8; String value9; String value10;
 
-                Cities cities = new Cities(values[0], values[1], values[2], values[3], values[4], values[5], values[6], values[7], values[8], values[9]);
+//                a very crude way of handling null fields
+                if (values[0].length() > 0) {
+                    value1 = values[0];
+                } else {
+                    value1 = "";
+                }
+
+                if (values[1].length() > 0) {
+                    value2 = values[1];
+                } else {
+                    value2 = "";
+                }
+
+                if (values[2].length() > 0) {
+                    value3 = values[2];
+                } else {
+                    value3 = "";
+                }
+
+                if (values[3].length() > 0) {
+                    value4 = values[3];
+                } else {
+                    value4 = "";
+                }
+
+                if (values[4].length() > 0) {
+                    value5 = values[4];
+                } else {
+                    value5 = "";
+                }
+
+                if (values[5].length() > 0) {
+                    value6 = values[5];
+                } else {
+                    value6 = "";
+                }
+
+                if (values[6].length() > 0) {
+                    value7 = values[6];
+                } else {
+                    value7 = "";
+                }
+
+                if (values[7].length() > 0) {
+                    value8 = values[7];
+                } else {
+                    value8 = "";
+                }
+
+                if (values[8].length() > 0) {
+                    value9 = values[8];
+                } else {
+                    value9 = "";
+                }
+
+                if (values[9].length() > 0) {
+                    value10 = values[9];
+                } else {
+                    value10 = "";
+                }
+
+                cities = new Cities(value1, value2, value3, value4, value5, value6, value7, value8, value9, value10);
                 citiesList.add(cities);
 
 
