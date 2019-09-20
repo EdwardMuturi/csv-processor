@@ -25,15 +25,15 @@ class CSVParserAdapter : ListAdapter<Cities, CSVParserAdapter.ViewHolder>(Cities
         val city= getItem(position) as Cities
 
         holder.itemView.tvLatD.text= city.latD
-        holder.itemView.tvLatD.text= city.latM
-        holder.itemView.tvLatD.text= city.latS
-        holder.itemView.tvLatD.text= city.nS
-        holder.itemView.tvLatD.text= city.lonD
-        holder.itemView.tvLatD.text= city.lonM
-        holder.itemView.tvLatD.text= city.lonS
-        holder.itemView.tvLatD.text= city.eW
-        holder.itemView.tvLatD.text= city.city
-        holder.itemView.tvLatD.text= city.state
+        holder.itemView.tvLatM.text= city.latM
+        holder.itemView.tvLatS.text= city.latS
+        holder.itemView.tvNs.text= city.nS
+        holder.itemView.tvLonD.text= city.lonD
+        holder.itemView.tvLonM.text= city.lonM
+        holder.itemView.tvLonS.text= city.lonS
+        holder.itemView.tveW.text= city.eW
+        holder.itemView.tvCity.text= city.city
+        holder.itemView.tvState.text= city.state
 
     }
 
