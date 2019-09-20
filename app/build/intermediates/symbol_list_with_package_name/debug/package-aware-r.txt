@@ -331,26 +331,6 @@ attr fastScrollHorizontalThumbDrawable
 attr fastScrollHorizontalTrackDrawable
 attr fastScrollVerticalThumbDrawable
 attr fastScrollVerticalTrackDrawable
-attr fileChooserDialogGravity
-attr fileChooserDialogStyle
-attr fileChooserFileIconStyle
-attr fileChooserListItemStyle
-attr fileChooserNewFolderBackgroundColor
-attr fileChooserNewFolderElevation
-attr fileChooserNewFolderOverlayColor
-attr fileChooserNewFolderSoftInputMode
-attr fileChooserNewFolderStyle
-attr fileChooserNewFolderTextColor
-attr fileChooserNewFolderWidthWeight
-attr fileChooserPathViewDisplayRoot
-attr fileChooserPathViewElevation
-attr fileChooserPathViewStyle
-attr fileChooserStyle
-attr fileChooserTextDateStyle
-attr fileChooserTextNameStyle
-attr fileChooserTextSizeStyle
-attr fileListItemFocusedDrawable
-attr fileListItemSelectedTint
 attr firstBaselineToTopHeight
 attr floatingActionButtonStyle
 attr font
@@ -738,8 +718,6 @@ bool abc_action_bar_embed_tabs
 bool abc_allow_stacked_button_bar
 bool abc_config_actionMenuItemAllCaps
 bool mtrl_btn_textappearance_all_caps
-bool use_activity
-bool use_provider
 color abc_background_cache_hint_selector_material_dark
 color abc_background_cache_hint_selector_material_light
 color abc_btn_colored_borderless_text_material
@@ -834,9 +812,6 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
-color li_row_background
-color li_row_background_tint
-color li_row_selector
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -1087,8 +1062,6 @@ dimen hint_pressed_alpha_material_light
 dimen item_touch_helper_max_drag_scroll_per_frame
 dimen item_touch_helper_swipe_escape_max_velocity
 dimen item_touch_helper_swipe_escape_velocity
-dimen list_item_padding
-dimen list_padding
 dimen material_emphasis_disabled
 dimen material_emphasis_high_type
 dimen material_emphasis_medium
@@ -1363,27 +1336,19 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
-drawable ic_add_24dp
 drawable ic_calendar_black_24dp
-drawable ic_chooser
 drawable ic_clear_black_24dp
-drawable ic_delete_24dp
 drawable ic_edit_black_24dp
-drawable ic_file
-drawable ic_folder
 drawable ic_keyboard_arrow_left_black_24dp
 drawable ic_keyboard_arrow_right_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
-drawable ic_menu_24dp
 drawable ic_menu_arrow_down_black_24dp
 drawable ic_menu_arrow_up_black_24dp
 drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
-drawable ic_provider
-drawable listview_item_selector
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
 drawable mtrl_ic_arrow_drop_down
@@ -1472,10 +1437,6 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
-id adjustNothing
-id adjustPan
-id adjustResize
-id adjustUnspecified
 id alertTitle
 id all
 id always
@@ -1593,7 +1554,6 @@ id multiply
 id navigation_header_container
 id never
 id noScroll
-id no_gravity
 id none
 id normal
 id notification_background
@@ -1617,7 +1577,6 @@ id radio
 id right
 id right_icon
 id right_side
-id root
 id rounded
 id save_image_matrix
 id save_non_transition_alpha
@@ -1699,8 +1658,6 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id tvDisplayData
-id txt_date
-id txt_size
 id unchecked
 id uniform
 id unlabeled
@@ -1788,7 +1745,6 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout li_row_textview
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
@@ -1876,19 +1832,13 @@ string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
 string chip_text
-string choose_file
 string clear_text_end_icon_content_description
-string dialog_cancel
-string dialog_ok
-string empty_directory
 string error_icon_content_description
-string error_selecting_file
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
-string internal_storage
 string mtrl_badge_numberless_content_description
 string mtrl_chip_close_icon_content_description
 string mtrl_exceed_max_badge_number_suffix
@@ -1921,10 +1871,6 @@ string mtrl_picker_toggle_to_calendar_input_mode
 string mtrl_picker_toggle_to_day_selection
 string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
-string new_folder_cancel
-string new_folder_ok
-string option_create_folder
-string options_delete
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
@@ -1932,10 +1878,7 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string search_menu_title
 string status_bar_notification_info_overflow
-string storage_removed
 string text_open_csv
-string title_choose
-string title_choose_dict_file
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog
@@ -2157,17 +2100,6 @@ style CardView
 style CardView_Dark
 style CardView_Light
 style EmptyTheme
-style FileChooserButtonStyle
-style FileChooserDialogStyle
-style FileChooserFileIconStyle
-style FileChooserListItemStyle
-style FileChooserNewFolderStyle
-style FileChooserPathViewStyle
-style FileChooserStyle
-style FileChooserTextDateStyle
-style FileChooserTextNameStyle
-style FileChooserTextSizeStyle
-style FileChooserTitleStyle
 style MaterialAlertDialog_MaterialComponents
 style MaterialAlertDialog_MaterialComponents_Body_Text
 style MaterialAlertDialog_MaterialComponents_Picker_Date_Calendar
@@ -2394,7 +2326,6 @@ style Theme_MaterialComponents_Light_NoActionBar
 style Theme_MaterialComponents_Light_NoActionBar_Bridge
 style Theme_MaterialComponents_NoActionBar
 style Theme_MaterialComponents_NoActionBar_Bridge
-style Theme_Transparent
 style ThemeOverlay_AppCompat
 style ThemeOverlay_AppCompat_ActionBar
 style ThemeOverlay_AppCompat_Dark
@@ -2660,7 +2591,6 @@ styleable CoordinatorLayout_Layout android_layout_gravity layout_anchor layout_a
 styleable DrawerArrowToggle arrowHeadLength arrowShaftLength barLength color drawableSize gapBetweenBars spinBars thickness
 styleable ExtendedFloatingActionButton elevation extendMotionSpec hideMotionSpec showMotionSpec shrinkMotionSpec
 styleable ExtendedFloatingActionButton_Behavior_Layout behavior_autoHide behavior_autoShrink
-styleable FileChooser fileChooserDialogGravity fileChooserDialogStyle fileChooserFileIconStyle fileChooserListItemStyle fileChooserNewFolderBackgroundColor fileChooserNewFolderElevation fileChooserNewFolderOverlayColor fileChooserNewFolderSoftInputMode fileChooserNewFolderStyle fileChooserNewFolderTextColor fileChooserNewFolderWidthWeight fileChooserPathViewDisplayRoot fileChooserPathViewElevation fileChooserPathViewStyle fileChooserTextDateStyle fileChooserTextNameStyle fileChooserTextSizeStyle fileListItemFocusedDrawable fileListItemSelectedTint
 styleable FloatingActionButton backgroundTint backgroundTintMode borderWidth elevation ensureMinTouchTargetSize fabCustomSize fabSize hideMotionSpec hoveredFocusedTranslationZ maxImageSize pressedTranslationZ rippleColor shapeAppearance shapeAppearanceOverlay showMotionSpec useCompatPadding
 styleable FloatingActionButton_Behavior_Layout behavior_autoHide
 styleable FlowLayout itemSpacing lineSpacing
