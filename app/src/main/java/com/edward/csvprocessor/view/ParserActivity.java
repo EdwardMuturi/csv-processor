@@ -9,11 +9,19 @@ import android.util.Log;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProviders;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.edward.csvprocessor.R;
+import com.edward.csvprocessor.adapter.CSVParserAdapter;
+import com.edward.csvprocessor.model.Cities;
 import com.edward.csvprocessor.util.Util;
 import com.edward.csvprocessor.viewmodel.ParserViewModel;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -23,6 +31,11 @@ public class ParserActivity extends AppCompatActivity {
     private static final int OPEN_FILE_REQUEST_CODE = 100;
     private Context context;
 
+    @BindView(R.id.rvData)
+    RecyclerView recyclerView;
+
+    List<Cities> cities = new ArrayList<>();
+    CSVParserAdapter csvParserAdapter = new CSVParserAdapter();
 
 
     @Override
@@ -32,6 +45,7 @@ public class ParserActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         parserViewModel = ViewModelProviders.of(this).get(ParserViewModel.class);
         context = ParserActivity.this;
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
 
     }
@@ -51,7 +65,11 @@ public class ParserActivity extends AppCompatActivity {
                 //get file path
                 Uri uri = data.getData();
                 String filePath = Util.getPathFromURI(context, uri);
+                cities = Util.readCSVFile(filePath);
 
+                csvParserAdapter.submitList(cities);
+
+                recyclerView.setAdapter(csvParserAdapter);
 
 
             } catch (NullPointerException e) {

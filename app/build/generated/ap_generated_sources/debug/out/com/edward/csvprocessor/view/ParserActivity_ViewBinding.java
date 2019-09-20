@@ -2,9 +2,9 @@
 package com.edward.csvprocessor.view;
 
 import android.view.View;
-import android.widget.TextView;
 import androidx.annotation.CallSuper;
 import androidx.annotation.UiThread;
+import androidx.recyclerview.widget.RecyclerView;
 import butterknife.Unbinder;
 import butterknife.internal.DebouncingOnClickListener;
 import butterknife.internal.Utils;
@@ -27,7 +27,7 @@ public class ParserActivity_ViewBinding implements Unbinder {
     this.target = target;
 
     View view;
-    target.tvFileContents = Utils.findRequiredViewAsType(source, R.id.tvDisplayData, "field 'tvFileContents'", TextView.class);
+    target.recyclerView = Utils.findRequiredViewAsType(source, R.id.rvData, "field 'recyclerView'", RecyclerView.class);
     view = Utils.findRequiredView(source, R.id.btnOpenFile, "method 'openFile'");
     view7f080048 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
@@ -45,7 +45,7 @@ public class ParserActivity_ViewBinding implements Unbinder {
     if (target == null) throw new IllegalStateException("Bindings already cleared.");
     this.target = null;
 
-    target.tvFileContents = null;
+    target.recyclerView = null;
 
     view7f080048.setOnClickListener(null);
     view7f080048 = null;

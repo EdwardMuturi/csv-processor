@@ -13,11 +13,12 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Util {
     private static final String STORAGE_PATH = Environment.getExternalStorageDirectory().getAbsolutePath();
     private static final String TAG = Util.class.getSimpleName();
-
 
 
     public static Intent openFileIntent() {
@@ -41,33 +42,34 @@ public class Util {
     //read csv file
 
     /**
-     *
      * @param path
      * @return String
-     *
      */
-    public static String readCSVFile(String path) {
+    public static List<Cities> readCSVFile(String path) {
         StringBuilder stringBuilder = new StringBuilder();
         String line = null;
+        List<Cities> citiesList = new ArrayList<>();
         try {
             //read text in default encoding
             FileReader fileReader = new FileReader(path);
-
             //wrap file reader in BufferedReader
             BufferedReader bufferedReader = new BufferedReader(fileReader);
 
-            bufferedReader.readLine();
+            //get titles in first line
+            String [] titles = bufferedReader.readLine().split(",");
+
 
             while ((line = bufferedReader.readLine()) != null) {
                 //split data by comma ,
-                String [] values= line.split(",");
-                Cities cities= new Cities(String.valueOf(values[0]), values[1], values[2], values[3], values[4], values[5], values[6], values[7], values[8], values[9]);
+                String[] values = line.split(",");
+                Cities cities = new Cities(values[0], values[1], values[2], values[3], values[4], values[5], values[6], values[7], values[8], values[9]);
+                citiesList.add(cities);
 
 
                 //read data
 
                 stringBuilder.append(line);
-                System.out.println(cities);
+                System.out.println(stringBuilder);
             }
 
             bufferedReader.close(); //close file
@@ -76,7 +78,7 @@ public class Util {
         } catch (IOException ioException) {
             System.out.println("Error reading file " + path);
         }
-            return stringBuilder.toString();
+        return citiesList;
     }
 
 }
