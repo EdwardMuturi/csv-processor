@@ -24,49 +24,8 @@ import java.util.Objects;
 public class Util {
     private static final String STORAGE_PATH = Environment.getExternalStorageDirectory().getAbsolutePath();
     private static final String TAG = Util.class.getSimpleName();
-    private static String FILE_PATH = "com.edward.csvprocessor.util.FILE_PATH";
 
-    /**
-     * @param context Open file dialog
-     *                Return selected file
-     */
-    public static void openFile(Context context, TextView textView) {
-//        String path= "path";
-        new ChooserDialog(context)
-                .withStartFile(STORAGE_PATH)
-                .withChosenListener((filePath, file) ->
-                        textView.setText(readFileContents(context, file.getAbsolutePath()))
-                )
 
-                .withOnCancelListener(dialogInterface -> {
-                    Toast.makeText(context, "CANCEL", Toast.LENGTH_LONG).show();
-                    dialogInterface.cancel();
-                })
-                .build()
-                .show();
-
-    }
-
-    public static String readFileContents(Context context, String path) {
-        StringBuilder stringBuilder = new StringBuilder();
-        Toast.makeText(context, FILE_PATH, Toast.LENGTH_LONG).show();
-
-        try (InputStream inputStream =
-                     context.getContentResolver().openInputStream(Uri.parse(path));
-             BufferedReader reader = new BufferedReader(
-                     new InputStreamReader(Objects.requireNonNull(inputStream)))) {
-            String line;
-            while ((line = reader.readLine()) != null) {
-                stringBuilder.append(line);
-                Log.d(TAG, "here" + stringBuilder.toString());
-            }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return stringBuilder.toString();
-    }
 
     public static Intent openFileIntent() {
         Intent chooseFile;
@@ -87,6 +46,13 @@ public class Util {
     }
 
     //read csv file
+
+    /**
+     *
+     * @param path
+     * @return String
+     *
+     */
     public static String readCSVFile(String path) {
         StringBuilder stringBuilder = new StringBuilder();
         String line = null;
