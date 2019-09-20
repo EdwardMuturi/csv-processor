@@ -16,13 +16,17 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 import kotlinx.coroutines.MainCoroutineDispatcher;
 
 public class Util {
-    private static final String STORAGE_PATH = Environment.getExternalStorageDirectory().getAbsolutePath();
+//    private static final String STORAGE_PATH = Environment.getExternalStorageDirectory().getAbsolutePath();
     private static final String TAG = Util.class.getSimpleName();
 
     /**
@@ -134,6 +138,26 @@ public class Util {
 
         }
         return citiesList;
+    }
+
+    public int convertToInteger(String string){
+        return Integer.parseInt(string);
+    }
+
+    public String convertToDate(String date){
+        SimpleDateFormat simpleDateFormat= new SimpleDateFormat("EEE MMM d HH:mm:ss zzz yyyy", Locale.US);
+            SimpleDateFormat format;
+        String formattedDate = null;
+        try {
+            Date dateToConvert= simpleDateFormat.parse(date);
+            format = new SimpleDateFormat("yyyy-MM-dd");
+            formattedDate = format.format(dateToConvert);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+
+        return  formattedDate;
     }
 
 }
