@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen10dp"
+    app:cardCornerRadius="@dimen/dimen_5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/dimen10dp"
+        android:paddingEnd="@dimen/dimen10dp"
+        android:paddingBottom="@dimen/dimen_5dp">
+
+        <!--    row 1-->
+        <!--    LatD-->
+        <TextView
+            android:id="@+id/tvLatD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="LatD"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!--    LatM -->
+        <TextView
+            android:id="@+id/tvLatM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="LatM"
+            app:layout_constraintEnd_toStartOf="@id/tvLatS"
+            app:layout_constraintStart_toEndOf="@id/tvLatD"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!--    LatS -->
+        <TextView
+            android:id="@+id/tvLatS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="LatS"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!--    row 2-->
+        <!--    NS-->
+        <TextView
+            android:id="@+id/tvNs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="NS"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvLatD" />
+        <!--    LonD-->
+        <TextView
+            android:id="@+id/tvLonD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="LonD"
+            app:layout_constraintEnd_toEndOf="@id/tvLatM"
+            app:layout_constraintStart_toStartOf="@id/tvLatM"
+            app:layout_constraintTop_toBottomOf="@id/tvLatM" />
+        <!--    LonM-->
+        <TextView
+            android:id="@+id/tvLonM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="LonM"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvLatS" />
+        <!--    row 3-->
+        <!--    LonS-->
+        <TextView
+            android:id="@+id/tvLonS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="LonS"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvNs" />
+        <!--    EW-->
+        <TextView
+            android:id="@+id/tveW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="EW"
+            app:layout_constraintEnd_toEndOf="@id/tvLatM"
+            app:layout_constraintStart_toStartOf="@id/tvLatM"
+            app:layout_constraintTop_toBottomOf="@id/tvLonD" />
+        <!--    City-->
+        <TextView
+            android:id="@+id/tvCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="City"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvLonM" />
+        <!--    row 4-->
+        <!--    State-->
+        <TextView
+            android:id="@+id/tvState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_15dp"
+            android:hint="State"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvLonS" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    >
+
+</androidx.cardview.widget.CardView>

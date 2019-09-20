@@ -1,30 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.ParserActivity">
+    tools:context=".view.ParserActivity"
+    android:background="#C3DCD9">
 
-
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="@dimen/dimen_0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/dimen_15dp"
-        android:layout_marginEnd="@dimen/dimen_15dp"
-        android:text="Hello World!"
-        android:id="@+id/tvDisplayData"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="@dimen/dimen_0dp"
+        android:id="@+id/rvData"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnOpenFile"
+        tools:listitem="@layout/data_row"/>
 
     <com.google.android.material.button.MaterialButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btnOpenFile"
         android:text="@string/text_open_csv"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvDisplayData" />
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
