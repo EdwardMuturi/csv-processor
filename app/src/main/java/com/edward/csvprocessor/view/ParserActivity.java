@@ -19,6 +19,7 @@ import com.edward.csvprocessor.adapter.CSVParserAdapter;
 import com.edward.csvprocessor.model.Cities;
 import com.edward.csvprocessor.util.Util;
 import com.edward.csvprocessor.viewmodel.ParserViewModel;
+import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.analytics.FirebaseAnalytics;
 
 import java.util.ArrayList;
@@ -35,11 +36,15 @@ public class ParserActivity extends AppCompatActivity {
     private Context context;
     private FirebaseAnalytics mFirebaseAnalytics;
 
+    @BindView(R.id.tiet_splitter)
+    TextInputEditText tvSplitter;
+
     @BindView(R.id.rvData)
     RecyclerView recyclerView;
 
     List<Cities> cities = new ArrayList<>();
     CSVParserAdapter csvParserAdapter = new CSVParserAdapter();
+    String splitter;
 
 
     @Override
@@ -57,8 +62,19 @@ public class ParserActivity extends AppCompatActivity {
 
     @OnClick(R.id.btnOpenFile)
     void openFile() {
+        takeSplitter();
         startActivityForResult(Util.openFileIntent(), OPEN_FILE_REQUEST_CODE);
 
+
+    }
+
+    private void takeSplitter() {
+        if (TextUtils.isEmpty(tvSplitter.getText().toString().trim())) {
+            splitter = tvSplitter.getText().toString().trim();
+        } else
+            splitter = ",";
+
+//        tvSplitter.setText("");
     }
 
     @Override
@@ -73,9 +89,9 @@ public class ParserActivity extends AppCompatActivity {
 
 
                 if (TextUtils.isEmpty(filePath)) {
-                    cities = Util.readCSVFileFromUri(context, uri, ",");
+                    cities = Util.readCSVFileFromUri(context, uri, splitter);
                 } else
-                    cities = Util.readCSVFile(context, filePath, ",");
+                    cities = Util.readCSVFile(context, filePath, splitter);
 
 
                 csvParserAdapter.submitList(cities);

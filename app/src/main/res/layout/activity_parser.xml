@@ -5,29 +5,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.ParserActivity"
-    android:background="#C3DCD9">
+    android:background="#C3DCD9"
+    tools:context=".view.ParserActivity">
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvData"
         android:layout_width="@dimen/dimen_0dp"
         android:layout_height="@dimen/dimen_0dp"
-        android:id="@+id/rvData"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/btnOpenFile"
-        tools:listitem="@layout/data_row"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/data_row" />
 
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_splitter"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginEnd="@dimen/dimen_10dp"
+        android:layout_marginBottom="@dimen/dimen_5dp"
+        android:hint="Column Separator (Optional)"
+        app:layout_constraintBottom_toBottomOf="@id/btnOpenFile"
+        app:layout_constraintEnd_toStartOf="@id/btnOpenFile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btnOpenFile">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_splitter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/btnOpenFile"
-        android:text="@string/text_open_csv"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="60dp"
         android:background="@color/colorAccent"
+        android:layout_marginEnd="@dimen/dimen_10dp"
         android:backgroundTint="@color/colorAccent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        android:text="@string/text_open_csv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/input_splitter" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

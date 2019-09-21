@@ -1062,8 +1062,8 @@ dimen design_tab_scrollable_min_width
 dimen design_tab_text_size
 dimen design_tab_text_size_2line
 dimen design_textinput_caption_translate_y
-dimen dimen10dp
 dimen dimen_0dp
+dimen dimen_10dp
 dimen dimen_15dp
 dimen dimen_40dp
 dimen dimen_5dp
@@ -1556,6 +1556,7 @@ id icon_only
 id ifRoom
 id image
 id info
+id input_splitter
 id invisible
 id italic
 id item_touch_helper_previous_elevation
@@ -1692,6 +1693,7 @@ id text_input_start_icon
 id textinput_counter
 id textinput_error
 id textinput_helper_text
+id tiet_splitter
 id time
 id title
 id titleDividerNoCustom
