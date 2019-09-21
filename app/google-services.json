@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "233478445276",
+    "firebase_url": "https://csv-processor-budget.firebaseio.com",
+    "project_id": "csv-processor-budget",
+    "storage_bucket": "csv-processor-budget.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:233478445276:android:30b11135f5487438763c19",
+        "android_client_info": {
+          "package_name": "com.edward.csvprocessor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "233478445276-tga3sov20qi5hrt9o4b5slh3t2uk1cgd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.edward.csvprocessor",
+            "certificate_hash": "f9c3c8f083ebb9a9bda2fd1980aeeec613efe354"
+          }
+        },
+        {
+          "client_id": "233478445276-e0deub7uhaitsq11dmeq8iapbmemjfmp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCONj0FaFZAzebHAn6hQ7l7BDwBierhNrk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "233478445276-e0deub7uhaitsq11dmeq8iapbmemjfmp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

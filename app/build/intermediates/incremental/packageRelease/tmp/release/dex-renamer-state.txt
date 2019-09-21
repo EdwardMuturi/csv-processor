@@ -1,0 +1,4 @@
+#Sat Sep 21 00:07:41 EAT 2019
+base.0=/Users/edward/AndroidStudioProjects/CSVProcessor/app/build/intermediates/dex/release/mergeDexRelease/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

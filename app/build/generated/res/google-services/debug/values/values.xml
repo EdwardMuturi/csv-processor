@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">233478445276-e0deub7uhaitsq11dmeq8iapbmemjfmp.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://csv-processor-budget.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">233478445276</string>
+    <string name="google_api_key" translatable="false">AIzaSyCONj0FaFZAzebHAn6hQ7l7BDwBierhNrk</string>
+    <string name="google_app_id" translatable="false">1:233478445276:android:30b11135f5487438763c19</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCONj0FaFZAzebHAn6hQ7l7BDwBierhNrk</string>
+    <string name="google_storage_bucket" translatable="false">csv-processor-budget.appspot.com</string>
+    <string name="project_id" translatable="false">csv-processor-budget</string>
+</resources>
