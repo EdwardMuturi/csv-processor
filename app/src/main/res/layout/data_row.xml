@@ -19,6 +19,7 @@
             android:id="@+id/tvLatD"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            style="@style/customTextSize"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
         <!--    LatM -->
@@ -27,6 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toStartOf="@id/tvLatS"
+            style="@style/customTextSize"
             app:layout_constraintStart_toEndOf="@id/tvLatD"
             app:layout_constraintTop_toTopOf="parent" />
         <!--    LatS -->
@@ -34,6 +36,7 @@
             android:id="@+id/tvLatS"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            style="@style/customTextSize"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
         <!--    row 2-->
@@ -42,6 +45,7 @@
             android:id="@+id/tvNs"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            style="@style/customTextSize"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvLatD" />
         <!--    LonD-->
@@ -49,6 +53,7 @@
             android:id="@+id/tvLonD"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            style="@style/customTextSize"
             app:layout_constraintEnd_toEndOf="@id/tvLatM"
             app:layout_constraintStart_toStartOf="@id/tvLatM"
             app:layout_constraintTop_toBottomOf="@id/tvLatM" />
@@ -57,6 +62,7 @@
             android:id="@+id/tvLonM"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            style="@style/customTextSize"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvLatS" />
         <!--    row 3-->
@@ -65,6 +71,7 @@
             android:id="@+id/tvLonS"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            style="@style/customTextSize"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvNs" />
         <!--    EW-->
@@ -72,6 +79,7 @@
             android:id="@+id/tveW"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            style="@style/customTextSize"
             app:layout_constraintEnd_toEndOf="@id/tvLatM"
             app:layout_constraintStart_toStartOf="@id/tvLatM"
             app:layout_constraintTop_toBottomOf="@id/tvLonD" />
@@ -80,6 +88,7 @@
             android:id="@+id/tvCity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            style="@style/customTextSize"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvLonM" />
         <!--    row 4-->
@@ -88,6 +97,7 @@
             android:id="@+id/tvState"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            style="@style/customTextSize"
             android:layout_marginBottom="@dimen/dimen_15dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvLonS" />

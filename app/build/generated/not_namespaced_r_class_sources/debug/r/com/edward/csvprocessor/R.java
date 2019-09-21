@@ -7265,6 +7265,7 @@ public final class R {
     public static final int Widget_MaterialComponents_Toolbar_PrimarySurface=0x7f0f029f;
     public static final int Widget_MaterialComponents_Toolbar_Surface=0x7f0f02a0;
     public static final int Widget_Support_CoordinatorLayout=0x7f0f02a1;
+    public static final int customTextSize=0x7f0f02a2;
   }
   public static final class styleable {
     /**
