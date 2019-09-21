@@ -1,7 +1,6 @@
 package com.edward.csvprocessor.util;
 
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
@@ -10,7 +9,10 @@ import android.os.Environment;
 import android.provider.MediaStore;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
+
 import com.edward.csvprocessor.model.Cities;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -26,7 +28,7 @@ import java.util.Locale;
 import kotlinx.coroutines.MainCoroutineDispatcher;
 
 public class Util {
-//    private static final String STORAGE_PATH = Environment.getExternalStorageDirectory().getAbsolutePath();
+    //    private static final String STORAGE_PATH = Environment.getExternalStorageDirectory().getAbsolutePath();
     private static final String TAG = Util.class.getSimpleName();
 
     /**
@@ -42,12 +44,6 @@ public class Util {
         return Intent.createChooser(chooseFile, "Choose a .CSV file");
     }
 
-    public static Intent openExternalFile() {
-        Intent chooseFile;
-        chooseFile = new Intent(Intent.ACTION_VIEW);
-        chooseFile.setType("text/*");
-        return Intent.createChooser(chooseFile, "Choose a .CSV file");
-    }
 
     /**
      * @param context get file path from given uri  {@param fileUri}
@@ -118,7 +114,7 @@ public class Util {
                 else if (values.length == 10)
                     cities = new Cities(values[0], values[1], values[2], values[3], values[4], values[5], values[6], values[7], values[8], values[9]);
                 else
-                    Toast.makeText(context, "Error reading file chosen file, choose a different file", Toast.LENGTH_LONG).show();
+                    showAlertDialog(context, "Error reading file chosen file, choose a different file");
 
 
                 citiesList.add(cities);
@@ -133,30 +129,30 @@ public class Util {
 
         } catch (FileNotFoundException fileNotFoundException) {
             System.out.println("Unable to open file " + path);
-            Toast.makeText(context, "Unable to open file, choose a different file", Toast.LENGTH_LONG).show();
+            showAlertDialog(context, "Unable to open file, choose a different file");
 
         } catch (IOException ioException) {
             System.out.println("Error reading file " + path);
-            Toast.makeText(context, "Error reading file chosen file, choose a different file", Toast.LENGTH_LONG).show();
+            showAlertDialog(context, "Error reading file chosen file, choose a different file");
 
         } catch (ArrayIndexOutOfBoundsException indexOutOfBoundException) {
             System.out.println("Error reading file " + indexOutOfBoundException);
-            Toast.makeText(context, "Cannot read this file, choose a different file", Toast.LENGTH_LONG).show();
+            showAlertDialog(context, "Cannot read this file, choose a different file");
 
         }
         return citiesList;
     }
 
-    public int convertToInteger(String string){
+    public int convertToInteger(String string) {
         return Integer.parseInt(string);
     }
 
-    public String convertToDate(String date){
-        SimpleDateFormat simpleDateFormat= new SimpleDateFormat("EEE MMM d HH:mm:ss zzz yyyy", Locale.US);
-            SimpleDateFormat format;
+    public String convertToDate(String date) {
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("EEE MMM d HH:mm:ss zzz yyyy", Locale.US);
+        SimpleDateFormat format;
         String formattedDate = null;
         try {
-            Date dateToConvert= simpleDateFormat.parse(date);
+            Date dateToConvert = simpleDateFormat.parse(date);
             format = new SimpleDateFormat("yyyy-MM-dd");
             formattedDate = format.format(dateToConvert);
         } catch (ParseException e) {
@@ -164,7 +160,15 @@ public class Util {
         }
 
 
-        return  formattedDate;
+        return formattedDate;
+    }
+
+    public static void showAlertDialog(Context context, String message) {
+        AlertDialog alertDialog = new MaterialAlertDialogBuilder(context)
+                .setTitle("Error")
+                .setMessage(message)
+                .setPositiveButton("OK", null)
+                .show();
     }
 
 }

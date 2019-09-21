@@ -4,11 +4,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -19,7 +19,6 @@ import com.edward.csvprocessor.adapter.CSVParserAdapter;
 import com.edward.csvprocessor.model.Cities;
 import com.edward.csvprocessor.util.Util;
 import com.edward.csvprocessor.viewmodel.ParserViewModel;
-import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.firebase.analytics.FirebaseAnalytics;
 
 import java.util.ArrayList;
@@ -72,7 +71,13 @@ public class ParserActivity extends AppCompatActivity {
                 Uri uri = data.getData();
                 String filePath = Util.getPathFromURI(context, uri);
 
-                cities = Util.readCSVFile(context, filePath, ",");
+
+                if (TextUtils.isEmpty(filePath)) {
+                    Toast.makeText(context, uri.getPath(), Toast.LENGTH_LONG).show();
+                    cities = Util.readCSVFile(context, uri.getPath(), ",");
+                } else
+                    cities = Util.readCSVFile(context, filePath, ",");
+
 
                 csvParserAdapter.submitList(cities);
 
@@ -81,13 +86,7 @@ public class ParserActivity extends AppCompatActivity {
 
             } catch (NullPointerException e) {
                 Log.e(TAG, e.toString());
-
-                AlertDialog alertDialog= new MaterialAlertDialogBuilder(context)
-                        .setTitle("Error")
-                        .setMessage("Unable to open file, please try to open a file in  a different location")
-                        .setPositiveButton("OK", null)
-                        .show();
-
+                Util.showAlertDialog(context, "Unable to open file, please try to open a file in  a different location");
             }
         }
 
