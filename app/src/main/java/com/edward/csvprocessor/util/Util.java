@@ -42,6 +42,13 @@ public class Util {
         return Intent.createChooser(chooseFile, "Choose a .CSV file");
     }
 
+    public static Intent openExternalFile() {
+        Intent chooseFile;
+        chooseFile = new Intent(Intent.ACTION_VIEW);
+        chooseFile.setType("text/*");
+        return Intent.createChooser(chooseFile, "Choose a .CSV file");
+    }
+
     /**
      * @param context get file path from given uri  {@param fileUri}
      * @return String
