@@ -73,7 +73,6 @@ public class ParserActivity extends AppCompatActivity {
 
 
                 if (TextUtils.isEmpty(filePath)) {
-                    Toast.makeText(context, uri.getPath(), Toast.LENGTH_LONG).show();
                     cities = Util.readCSVFileFromUri(context, uri, ",");
                 } else
                     cities = Util.readCSVFile(context, filePath, ",");

@@ -1065,6 +1065,7 @@ dimen design_textinput_caption_translate_y
 dimen dimen10dp
 dimen dimen_0dp
 dimen dimen_15dp
+dimen dimen_40dp
 dimen dimen_5dp
 dimen disabled_alpha_material_dark
 dimen disabled_alpha_material_light
