@@ -119,7 +119,7 @@ public class Util {
                 else if (values.length == 10)
                     cities = new Cities(values[0], values[1], values[2], values[3], values[4], values[5], values[6], values[7], values[8], values[9]);
                 else
-                    showAlertDialog(context, "Error reading file chosen file, choose a different file");
+                    showAlertDialog(context, "File has too many columns, maximum number of columns supported is 10");
 
 
                 citiesList.add(cities);
