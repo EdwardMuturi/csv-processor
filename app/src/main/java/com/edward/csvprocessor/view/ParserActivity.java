@@ -62,7 +62,7 @@ public class ParserActivity extends AppCompatActivity {
 
     @OnClick(R.id.btnOpenFile)
     void openFile() {
-        takeSplitter();
+//        takeSplitter();
         startActivityForResult(Util.openFileIntent(), OPEN_FILE_REQUEST_CODE);
 
 
@@ -89,9 +89,9 @@ public class ParserActivity extends AppCompatActivity {
 
 
                 if (TextUtils.isEmpty(filePath)) {
-                    cities = Util.readCSVFileFromUri(context, uri, splitter);
+                    cities = Util.readCSVFileFromUri(context, uri, ",");
                 } else
-                    cities = Util.readCSVFile(context, filePath, splitter);
+                    cities = Util.readCSVFile(context, filePath, ",");
 
 
                 csvParserAdapter.submitList(cities);

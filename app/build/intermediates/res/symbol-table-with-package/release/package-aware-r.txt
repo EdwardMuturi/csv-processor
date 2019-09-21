@@ -1062,9 +1062,10 @@ dimen design_tab_scrollable_min_width
 dimen design_tab_text_size
 dimen design_tab_text_size_2line
 dimen design_textinput_caption_translate_y
-dimen dimen10dp
 dimen dimen_0dp
+dimen dimen_10dp
 dimen dimen_15dp
+dimen dimen_40dp
 dimen dimen_5dp
 dimen disabled_alpha_material_dark
 dimen disabled_alpha_material_light
@@ -1555,6 +1556,7 @@ id icon_only
 id ifRoom
 id image
 id info
+id input_splitter
 id invisible
 id italic
 id item_touch_helper_previous_elevation
@@ -1691,6 +1693,7 @@ id text_input_start_icon
 id textinput_counter
 id textinput_error
 id textinput_helper_text
+id tiet_splitter
 id time
 id title
 id titleDividerNoCustom
@@ -2629,6 +2632,7 @@ style Widget_MaterialComponents_Toolbar_Primary
 style Widget_MaterialComponents_Toolbar_PrimarySurface
 style Widget_MaterialComponents_Toolbar_Surface
 style Widget_Support_CoordinatorLayout
+style customTextSize
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth
